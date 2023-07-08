@@ -1,11 +1,10 @@
 USE [master]
 GO
 
-/****** Object:  Database [Northwind]    Script Date: 7/5/2023 3:47:09 PM ******/
-CREATE DATABASE [Northwind]
+CREATE DATABASE Northwind
 GO
 
-USE [Northwind]
+USE Northwind
 GO
 
 SET NOCOUNT ON
@@ -14,9 +13,6 @@ GO
 set quoted_identifier on
 GO
 
-/* Set DATEFORMAT so that the date strings are interpreted correctly regardless of
-   the default DATEFORMAT on the server.
-*/
 SET DATEFORMAT mdy
 GO
 
