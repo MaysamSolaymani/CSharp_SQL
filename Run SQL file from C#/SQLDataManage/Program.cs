@@ -15,7 +15,7 @@ namespace SQLDataManage
             string script = null;
             script = File.ReadAllText("CreateDB.sql");
             string[] ScriptSplitter = script.Split(new string[] { "GO" }, StringSplitOptions.None);
-            SqlConnection cn = new SqlConnection(@"Password=test;Persist Security Info=True;User ID=test;Initial Catalog=master;Data Source=.");
+            SqlConnection cn = new SqlConnection(@"Password=test;Persist Security Info=True; User ID=test; Initial Catalog=master; Data Source=.");
             SqlCommand cm;
             using (cn)
             {
