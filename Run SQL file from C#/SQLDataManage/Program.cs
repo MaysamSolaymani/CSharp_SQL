@@ -20,6 +20,7 @@ namespace SQLDataManage
             using (cn)
             {
                 cn.Open();
+                
                 foreach (string str in ScriptSplitter)
                 {
                     using (cm = cn.CreateCommand())
